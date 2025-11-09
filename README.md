@@ -18,7 +18,7 @@ architecture, assumptions, and how to test the required scenarios from the assig
 Open a Windows cmd.exe (or PowerShell) and run:
 
 ```cmd
-cd /d C:\Users\zeref\Desktop\QueueCTL
+cd /d C:\Users\user_name\file_location\QueueCTL
 npm install
 npm run build
 ```
