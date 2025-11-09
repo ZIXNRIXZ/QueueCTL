@@ -61,7 +61,7 @@ What I changed
 - Exported a helper `processNextJobOnce` to run a single job (used by the verify script).
 - Added `src/scripts/verify.ts` for a quick smoke test.
 
-Next steps / TODO
+
 -----------------
 ## QueueCTL
 
@@ -226,25 +226,6 @@ Manual test scenarios to validate assignment requirements:
 - `src/utils.ts` — pidfile helpers
 - `src/scripts/verify.ts` — small smoke test script
 
-## Next steps (optional improvements)
-
-- Add automated integration tests for the 5 required scenarios (jest or similar).
-- Improve worker supervision (graceful stop with timeout, forced kill, central PID registry).
-- Add job timeouts and capture job stdout/stderr into logs; add per-job metadata for debugging.
-- Add metrics and a small dashboard for monitoring.
-
-If you want, I can now add automated tests for the required scenarios or improve the worker supervision logic. Tell me which one to prioritize.
-Enqueue successful, failing, and slow jobs.
-
-Start workers.
-
-Check job status and verify correct completion/failure.
-
-Verify that failed jobs land in the DLQ.
-
-Retry a job from the DLQ.
-
-Stop all workers.
 
 # Make the script executable
 chmod +x ./test_flow.sh
