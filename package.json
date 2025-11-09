@@ -1,0 +1,36 @@
+{
+  "name": "queuectl",
+  "version": "1.0.0",
+  "description": "A CLI-based background job queue system.",
+  "main": "dist/cli.js",
+  "bin": {
+    "queuectl": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "ts-node src/cli.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "job-queue",
+    "cli",
+    "worker"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^11.1.2",
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0",
+    "find-process": "^1.4.7",
+    "table": "^6.8.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    
+    "@types/node": "^20.14.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
